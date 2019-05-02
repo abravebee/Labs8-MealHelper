@@ -1,9 +1,9 @@
 {
     "name": "eat-well-app",
     "version": 2,
-    "alias": "eat-well.now.sh",
+    "alias": "eat-well-app.now.sh",
     "builds": [
-      { "src": "Front-end/mealhelper/package.json", 
+      { "src": "front-end/package.json", 
         "use": "@now/static-build",
         "config": { "distDir": "build" } 
       }
@@ -11,7 +11,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/front-end/$1"
+        "dest": "/Front-end/mealhelper/$1"
       }
     ],
     "github": {
