@@ -1,0 +1,63 @@
+.recipebook-container-kcb {
+    margin: 100px auto 0;
+    width: 600px;
+    background: #242424;
+    border: 1px solid #2f9dfe;
+    justify-self: center;
+  }
+  
+  .recipebook-heading-kcb {
+    border-bottom: 1px solid #2f9dfe;
+  }
+  
+  .recipebook-heading-kcb h1 {
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .recipebook-card-kcb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* adjust when nutrs work */
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #2f9dfe;
+    margin-top: 5px;
+    color: white;
+  }
+    
+  .recipebook-text-kcb {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; uncomment when ntrs work*/
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .recipebook-card-sec1-kcb {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 5px;
+    /* border: 1px solid lime; */
+  }
+  
+  .recipebook-card-sec2-kcb {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    /* border-top: 1px solid #2f9dfe; uncomment when nutrs work*/ 
+  }
+  
+  .recipebook-calories-kcb {
+    width: 100%;
+    /* border: 1px solid orange; */
+  }
+
+  .recipebook-name-kcb {
+    width: 200px;
+    font-size: 18px;
+    /* border: 1px solid yellow; */
+  }

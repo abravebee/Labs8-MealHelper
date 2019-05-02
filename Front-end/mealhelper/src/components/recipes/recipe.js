@@ -1,3 +1,4 @@
+    
 import React, { Component } from "react";
 import { connect } from "react-redux";
 //change the route for this
@@ -7,36 +8,34 @@ import { getIngredients } from "../../store/actions/ingredActions";
 // import { deleteRecipe } from "../../store/actions/recipeActions";
 
 import "./recipes.css";
+import "./recipebook.css";
+import "../alarms/myAlarms.css";
 
 class Recipe extends Component {
   render() {
     return (
-      <div className="single-recipe-plz">
-        <Link
-          className="a-tags"
-          recipeID={this.props.id}
-          to={`/recipe/${this.props.id}`}
-        >
-          <div className="single-recipe-view">
-            <div className="recipe-name">
-              <h1>{this.props.name}</h1>
+      <div className="recipebook-card-kcb">
+        <div className="recipebook-text-kcb"
+         onClick={() => this.props.history.push(`/recipe/${this.props.id}`)}>           
+           
+                <div className="recipebook-name-kcb">
+                    <p>{this.props.name}</p>
+
             </div>
-            <div className="calories-display">
-              Calories: {this.props.calories}
-            </div>
-          </div>
-        </Link>
-        <button
-          onClick={() =>
-            this.props.deleteRecipe(
-              this.props.id,
-              localStorage.getItem("user_id")
-            )
-          }
-          className="delete-recipe"
-        >
-          Delete
-        </button>
+        
+                <div className="recipebook-calories-kcb">
+                    <p>Calories: {this.props.calories}</p>
+                
+                </div>
+           
+                <button className="alarm-btn delete"
+                onClick={() =>
+                    this.props.deleteRecipe(
+                      this.props.id,
+                      localStorage.getItem("user_id")
+                    )
+                  }> Delete </button>
+        </div>
       </div>
     );
   }
